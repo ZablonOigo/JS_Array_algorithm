@@ -16,3 +16,11 @@ const minValue= Math.min.apply(null,
     car.map((value)=> { return value.price; }));
  
   console.log(minValue);
+//method return an array iterator object with the keys of the array
+  const fruit=['banana','apple','mango','kiwi','passion'];
+  let Fruits=fruit.keys();
+  let str='';
+  for (let i of Fruits){
+    str+=i+'<br>'
+  }
+  document.writeln(str);//01234;
