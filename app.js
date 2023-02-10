@@ -2,12 +2,12 @@
 
 class Employee{
     display(){
-        document.writeln('hello');
+        // document.writeln('hello');
     }
 }
 class Person extends Employee{
     display(){
-        document.writeln('Developer');
+        // document.writeln('Developer');
     }
 }
 let person1=[new Employee(),new Person()];
@@ -46,4 +46,24 @@ function checkInput(){
         //show valid
         setsuccess(username);
     }
+    if(emailvalue === ''){
+        Seterrorfor(email,'email cannot be empty');
+    }else{
+
+    }
+}
+function Seterrorfor(input,message){
+    //get form control
+    const formcontrol=input.parentElement;
+    const small=formcontrol.querySelector('small');
+    //add error message
+    small.innerText=message;
+    //add error class
+
+    formcontrol.className='form-control  error';
+}
+
+function setsuccess(input){
+    const formcontrol=input.parentElement;
+    formcontrol.className='form-control  success';
 }
