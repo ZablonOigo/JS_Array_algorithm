@@ -35,7 +35,7 @@ function checkInput(){
     const usernamevalue=username.value.trim();
     const emailvalue=email.value.trim();
     const passwordvalue=password.value.trim();
-    constpass2value= password2.vallue.trim();
+    constpass2value= password2.value.trim();
 
 
     //test condition
